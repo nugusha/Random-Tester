@@ -5,19 +5,13 @@ using namespace std;
 int n;
 int main ()
 {
-
 	int TEST = 0; // test iterator/index
 	int MAX = 1e6;
 	string STATUS; // status is "OK" or "WRONG"
-	int numberOfOutputs = 2; // number of outputs
+	int numberOfOutputs = 2; // number of outputs	
 	
-	
-	cin>>n;  //  input more if relevant
-
-	
+	cin>>n;  //  input more if relevant	
   	
-  	
-	
 	while(true){
 		++TEST;
 		STATUS = "OK"; // initial status 
@@ -26,16 +20,18 @@ int main ()
   		myfile.open ("a.in");
 		
 		myfile<<n<<endl;
-		for(int i=0;i<n;i++)myfile<<rand()%MAX+1<<" ";      // modify ouput ranges if relevant.  
-		myfile<<endl;										// 
-															// use array/map to ensure if unique number needed	
-															// 
-															// ez tree edges below			
-															// x=rand()%mod1;   y=x+rand()%mod2;
-															// x->y
-															//
-															// ez overall
-															//
+		for(int i=0;i<n;i++)myfile<<rand()%MAX+1<<" ";       
+		myfile<<endl;									
+		
+		// modify ouput ranges if relevant. 
+		// use array/map to ensure if unique number needed	
+		// 
+		// ez tree edges below			
+		// x=rand()%mod1;   y=x+rand()%mod2;
+		// x->y
+		//
+		// ez overall
+		//
 		
 		
 		
@@ -56,7 +52,7 @@ int main ()
 			
 			f1>>x;
 			f2>>y;
-//			cout<<x<<" "<<y<<endl;
+			//cout<<x<<" "<<y<<endl;
 			
 			if(x!=y)STATUS = "WRONG";
 		}
@@ -68,6 +64,4 @@ int main ()
 		
 		if(STATUS == "WRONG") break;
 	}
-	
-  	
 }
