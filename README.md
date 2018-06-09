@@ -5,6 +5,14 @@
 >  X.cpp - O(n^2) Correct solution
 >  Y.cpp - O(n*lg(n)) Wrong/ToBeTested solution
 >  run Tester, find a test case where Y fails. ez
+>
+>  Modify Testers randomization of inputs
+>  which go to a.in
+>  modify range
+>  fix for unique values
+>  use previous values to create new ones
+>    edge example: you need number in increasing order
+>        x=rand()%mod1;   y=x+rand()%mod2;
 
 * Save codes in X and Y 
 * Run X.cpp and Y.cpp, then Tester.cpp
@@ -22,3 +30,11 @@
 * 4) ez gg wp 
 	
 [Google](https://www.google.com)
+
+## Errors
+>if you get
+> 'X.exe' is not recognized as an internal or external command, operable program or batch file. 
+>it means there's no X.exe 
+>to resolve the issue run X.cpp !!! so ez
+
+#
