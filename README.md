@@ -32,9 +32,8 @@
 [Google](https://www.google.com)
 
 ## Errors
->if you get
-> 'X.exe' is not recognized as an internal or external command, operable program or batch file. 
->it means there's no X.exe 
->to resolve the issue run X.cpp !!! so ez
+* if you get:
+"'X.exe' is not recognized as an internal or external command, operable program or * batch file." 
+* It means there's no X.exe 
+* To resolve the issue run X.cpp !!! so ez
 
-#
