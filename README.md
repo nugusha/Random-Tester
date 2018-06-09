@@ -12,7 +12,7 @@
 	
 * 1) close exe file 
 * 2) open a.in 
-	     which will consist of test case where X's and Y's output differ
+	     which will consist of thr test case where outputs differ
 * 3) enjoy finding a bug 
 * 4) ez gg wp 
 	
