@@ -23,12 +23,14 @@ int main ()
   		myfile.open ("a.in");
 		
 		myfile<<n<<endl;
-		for(int i=0;i<n;i++)myfile<<rand()%MAX+1<<" ";
+		for(int i=0;i<n;i++)myfile<<rand()%MAX+1<<" "; // example: range 1 to MAX
 			
 		myfile.close();
 		
-		system("\X.exe");
-		system("\Y.exe");
+		system("g++ -o A X.cpp"); system("./A"); // Call X.cpp and wait till it finishes working
+		system("g++ -o B Y.cpp"); system("./B"); // Call Y.cpp and wait till it finishes working
+		// You can use any file name instead of "A" or "B" 
+		// Just be sure that no other file in the folder has that name
 		
 		ifstream f1,f2;
   		f1.open ("x.out");  // Read X.cpp output
