@@ -1,5 +1,5 @@
 // Nugzar Chkhaidze
-// Windows
+// Ubuntu
 
 #include <bits/stdc++.h>
 #include <fstream>
