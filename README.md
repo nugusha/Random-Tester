@@ -1,14 +1,19 @@
 # Random-Tester
 >Sample Tester for Competitive Programming competitions.
 > X.cpp and Y.cpp are the codes to be tested against.
-* for example:
-*  X.cpp - O(n^2) Correct solution
-*  Y.cpp - O(n*lg(n)) Wrong/ToBeTested solution
-*  run Tester, find a test case where Y fails. ez
+> Tester tests X's and Y's outputs and finds the testcase on which they differ.
+> Use slower solution in X and more efficient one in Y
+ 
+```sh
+for example:
+|  X.cpp - O(n^2) Correct solution
+|  Y.cpp - O(n*lg(n)) Wrong/ToBeTested solution
+| run Tester, find a test case where Y fails. ez
+```
 
 ## Tips
 
-*  Modify Testers randomization of inputs
+*  Modify Testers' randomization of inputs
 *  which go to a.in
 *  modify range
 *  fix for unique values
@@ -42,3 +47,8 @@
 * It means there's no X.exe 
 * To resolve the issue run X.cpp !!! so ez
 
+
+License
+----
+
+MIT
