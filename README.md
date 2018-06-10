@@ -1,21 +1,26 @@
 # Random-Tester
 >Sample Tester for Competitive Programming competitions.
 > X.cpp and Y.cpp are the codes to be tested against.
-> for example:
->  X.cpp - O(n^2) Correct solution
->  Y.cpp - O(n*lg(n)) Wrong/ToBeTested solution
->  run Tester, find a test case where Y fails. ez
->
->  Modify Testers randomization of inputs
->  which go to a.in
->  modify range
->  fix for unique values
->  use previous values to create new ones
->    edge example: you need number in increasing order
->        x=rand()%mod1;   y=x+rand()%mod2;
+* for example:
+*  X.cpp - O(n^2) Correct solution
+*  Y.cpp - O(n*lg(n)) Wrong/ToBeTested solution
+*  run Tester, find a test case where Y fails. ez
+
+## Tips
+
+*  Modify Testers randomization of inputs
+*  which go to a.in
+*  modify range
+*  fix for unique values
+*  use previous values to create new ones
+*    edge example: you need number in increasing order
+*        x=rand()%mod1;   y=x+rand()%mod2;
+
+# How to 
 
 * Save codes in X and Y 
-* Run X.cpp and Y.cpp, then Tester.cpp
+* Run X.cpp and Y.cpp to create exe files
+* Run Tester.cpp
 * Tester.cpp feeds input to a.in
 * X.exe and Y.exe are executed and Outputs saved to x.out and y.out
 * Tester.cpp reads outputs and compares
