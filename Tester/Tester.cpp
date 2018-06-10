@@ -27,8 +27,10 @@ int main ()
 			
 		myfile.close();
 		
-		system("\X.exe");
-		system("\Y.exe");
+		system("g++ -o A X.cpp"); system("./A"); // Call X.cpp and wait till it finishes working
+		system("g++ -o B Y.cpp"); system("./B"); // Call Y.cpp and wait till it finishes working
+		// You can use any file name instead of "A" or "B" 
+		// Just be sure that no other file in the folder has that name
 		
 		ifstream f1,f2;
   		f1.open ("x.out");  // Read X.cpp output
