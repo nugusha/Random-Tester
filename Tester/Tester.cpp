@@ -1,3 +1,6 @@
+// Nugzar Chkhaidze
+// Ubuntu
+
 #include <bits/stdc++.h>
 #include <fstream>
 #include <iostream>
@@ -22,21 +25,14 @@ int main ()
 		myfile<<n<<endl;
 		for(int i=0;i<n;i++)myfile<<rand()%MAX+1<<" ";
 			
-		myfile.close();								
-		
-		// modify ouput ranges if relevant. 
-		// use array/map to ensure if unique number needed	
-		// 
-		// example: ez tree edges below			
-		// x=rand()%mod1;   y=x+rand()%mod2;
-		// x->y
+		myfile.close();
 		
 		system("\X.exe");
 		system("\Y.exe");
 		
 		ifstream f1,f2;
-  		f1.open ("x.out");  // Read from X.cpp
-  		f2.open ("y.out");  // Read from Y.cpp 
+  		f1.open ("x.out");  // Read X.cpp output
+  		f2.open ("y.out");  // Read Y.cpp output
 		
 		for(int i=0;i<numberOfOutputs;i++){
 			f1>>x;
