@@ -26,14 +26,15 @@ for example:
 # How to 
 
 * Save codes in X and Y 
-* Run X.cpp and Y.cpp to create exe files
 * Run Tester.cpp
 * Tester.cpp feeds input to a.in
+* X.cpp and Y.cpp are compiled
 * X.exe and Y.exe are executed and Outputs saved to x.out and y.out
 * Tester.cpp reads outputs and compares
 * Prints "OK" for same outputs | Prints "Wrong" if otherwise and stops
+* Repeats running exe files and comparing outputs until it finds different result
 
-### When Tester fails:
+### When Tester stops:
 	
 * 1) close exe file 
 * 2) open a.in 
@@ -41,13 +42,21 @@ for example:
 * 3) enjoy finding a bug 
 * 4) ez gg wp 
 	
-[Google](https://www.google.com)
+[Magic](https://www.google.com)
 
-## Errors
+## Errors (updated code, should not be getting the error below in any circumstance)
 * if you get:
 "'X.exe' is not recognized as an internal or external command, operable program or * batch file." 
 * It means there's no X.exe 
-* To resolve the issue run X.cpp !!! so ez
+* To resolve the issue run X.cpp and Y.cpp !
+
+```sh
+|Save Tester.cpp, X.cpp, Y.cpp and a.in in the same folder.
+|Don't name any file in the folder A, B, A.cpp, B.cpp ..
+|if you still want to have A.cpp and B.cpp 
+|   change system call in Tester.cpp to create executables with different names
+|A and B are arbirtrary names.
+```
 
 
 License
