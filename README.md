@@ -1,8 +1,10 @@
 # Random-Tester
->Sample Tester for Competitive Programming competitions.
-> X.cpp and Y.cpp are the codes to be tested against.
-> Tester tests X's and Y's outputs and finds the testcase on which they differ.
-> Use slower solution in X and more efficient one in Y
+```sh
+Sample Tester for Competitive Programming competitions.
+ X.cpp and Y.cpp are the codes to be tested against.
+ Tester tests X's and Y's outputs and finds the testcase on which they differ.
+ Use slower solution in X and more efficient one in Y
+``` 
  
 ```sh
 for example:
