@@ -1,5 +1,5 @@
 // Nugzar Chkhaidze
-// Ubuntu
+// Windows
 
 #include <bits/stdc++.h>
 #include <fstream>
@@ -14,6 +14,10 @@ int main ()
 	int numberOfOutputs = 2; // number of outputs	
 	
 	cin>>n;  //  input more if relevant	
+  	system("g++ -o A X.cpp"); // compile X.cpp  |  executable A is created
+  	system("g++ -o B Y.cpp"); // compile Y.cpp  |  executable B is created
+  	// You can use any file name instead of "A" or "B" 
+	// Make sure that no other file in the folder has that name
   	
 	while(true){
 		++TEST;
@@ -27,10 +31,8 @@ int main ()
 			
 		myfile.close();
 		
-		system("g++ -o A X.cpp"); system("./A"); // Call X.cpp and wait till it finishes working
-		system("g++ -o B Y.cpp"); system("./B"); // Call Y.cpp and wait till it finishes working
-		// You can use any file name instead of "A" or "B" 
-		// Just be sure that no other file in the folder has that name
+		system("\A"); // run X.cpp executable
+		system("\B"); // run Y.cpp executable
 		
 		ifstream f1,f2;
   		f1.open ("x.out");  // Read X.cpp output
