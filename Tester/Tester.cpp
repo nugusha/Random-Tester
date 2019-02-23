@@ -31,8 +31,8 @@ int main ()
 			
 		myfile.close();
 		
-		system("\A"); // run X.cpp executable
-		system("\B"); // run Y.cpp executable
+		system("\A < a.in > x.out"); // run X.cpp executable
+		system("\B < a.in > y.out"); // run Y.cpp executable
 		
 		ifstream f1,f2;
   		f1.open ("x.out");  // Read X.cpp output
